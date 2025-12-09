@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Application - Paws Adoption</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        form {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .form-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .form-section legend {
+            font-weight: bold;
+            color: #5a7d9a;
+            font-size: 1.2em;
+            padding: 0 10px;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        .submit-button {
+            display: block;
+            background-color: #f2c75b; 
+            color: #333;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #e0b445;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐾 Paws Cat Adoption</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cats.html">Available Cats</a>
+            <a href="process.html">Adoption Process</a>
+            <a href="application.html">Apply</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="resources.html">Resources</a>
+            <a href="success.html">Success Stories</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Adoption Application Form</h2>
+        <p>Please complete all sections. Your thoughtful answers help us ensure a purr-fect match!</p>
+        <p class="required-note">Fields marked with an asterisk (<span style="color: red;">*</span>) are required.</p>
+
+        <form action="/submit_application" method="POST">
+            
+            <fieldset class="form-section">
+                <legend>1. Personal Information</legend>
+                <label for="name">Full Name: <span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address: <span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>2. Residence Details</legend>
+                
+                <label for="address">Full Address: <span style="color: red;">*</span></label>
+                <input type="text" id="address" name="address" required>
+
+                <label>Do you own or rent your home? <span style="color: red;">*</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="residence" value="own" required> Own</label>
+                    <label><input type="radio" name="residence" value="rent"> Rent</label>
+                </div>
+                
+                <label for="landlord">Landlord Name/Phone (if renting):</label>
+                <input type="text" id="landlord" name="landlord">
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>3. Cat Details</legend>
+
+                <label for="cat_interest">Cat You Are Interested In (Optional):</label>
+                <select id="cat_interest" name="cat_interest">
+                    <option value="any">Any Available Cat</option>
+                    <option value="mittens">Mittens</option>
+                    <option value="shadow">Shadow</option>
+                    <option value="ginger">Ginger</option>
+                </select>
+                
+                <label>Do you currently have other pets?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="other_pets" value="yes"> Yes</label>
+                    <label><input type="radio" name="other_pets" value="no" checked> No</label>
+                </div>
+                
+                <label for="experience">Describe your previous pet ownership experience:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+
+                <label for="reason">Why do you want to adopt a cat? <span style="color: red;">*</span></label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Submit Adoption Application</button>
+            <p style="font-size: 0.9em; margin-top: 10px;">Note: This is a demo site. The form data will not actually be sent.</p>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pawsome Cat Adoption. Thank you for choosing adoption.</p>
+    </footer>
+</body>
+</html>

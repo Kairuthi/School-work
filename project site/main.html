@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cats -  Adoption</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .cat-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+            justify-content: space-around; 
+        }
+        .cat-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 300px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cat-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .cat-card h3 {
+            color: #5a7d9a;
+            margin-top: 0;
+        }
+        .cat-card a.profile-link {
+            display: block;
+            background-color: #f2c75b;
+            color: #333;
+            padding: 8px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐾 Paws Cat Adoption</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cats.html">Available Cats</a>
+            <a href="process.html">Adoption Process</a>
+            <a href="application.html">Apply</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="resources.html">Resources</a>
+            <a href="success.html">Success Stories</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Meet Our Available Cats!</h2>
+        <p>Click on a cat's photo or name to view their full profile and learn more about their personality.</p>
+
+        <div class="cat-list">
+            
+            <div class="cat-card">
+                <img src="images/mittens_thumb.jpg" alt="A fluffy white cat named Mittens">
+                <h3>Mittens</h3>
+                <p><strong>Age:</strong> 2 years</p>
+                <p><strong>Personality:</strong> Cuddly and calm lap-cat.</p>
+                <a href="mittens.html" class="profile-link">View Mittens' Profile</a>
+            </div>
+
+            <div class="cat-card">
+                <img src="images/shadow_thumb.jpg" alt="A sleek black cat named Shadow">
+                <h3>Shadow</h3>
+                <p><strong>Age:</strong> 6 months</p>
+                <p><strong>Personality:</strong> Energetic, playful, and loves toys.</p>
+                <a href="shadow.html" class="profile-link">View Shadow's Profile</a>
+            </div>
+
+            <div class="cat-card">
+                <img src="images/ginger_thumb.jpg" alt="A friendly orange tabby named Ginger">
+                <h3>Ginger</h3>
+                <p><strong>Age:</strong> 4 years</p>
+                <p><strong>Personality:</strong> Independent, friendly with kids, enjoys sunbathing.</p>
+                <a href="ginger.html" class="profile-link">View Ginger's Profile</a>
+            </div>
+
+            <div class="cat-card">
+                <img src="images/tofu_thumb.jpg" alt="A small gray kitten named Tofu">
+                <h3>Tofu</h3>
+                <p><strong>Age:</strong> 1 year</p>
+                <p><strong>Personality:</strong> Shy at first, but incredibly loyal and affectionate once warmed up.</p>
+                <a href="tofu.html" class="profile-link">View Tofu's Profile</a>
+            </div>
+            
+        </div>
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Pawsome Cat Adoption. Love is a four-legged word.</p>
+    </footer>
+</body>
+</html>
